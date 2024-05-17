@@ -9,16 +9,57 @@
     width: 300px;
     border: 1px solid #000;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-auto-columns: 100px ;
-    grid-auto-flow: column;
+    grid-template-rows: 150px 150px 150px;
+    grid-auto-columns: 75px 75px 75px;
+    grid-template-areas: "item_1 item_2 item_2"
+                         "item_3 item_3 item_4"
+                         "item_5 item_6 item_7";
+    place-content: center;
     gap: 1rem;
     background-color: #711515;
 }
 
 .item{
     background-color: #16ae56;
-    border: 5px solid #000;
+    border: 3px solid #000;
     font-size: 4rem;
+    padding: 5px;
 
+}
+
+.item1{
+    grid-area: item_1;
+    background-color: #36f385;
+    border-radius: 10px;
+}
+
+.item2{
+    background-color: #19db6a;
+    grid-area: item_2;
+    border-radius: 10px;
+}
+
+.item3{
+    grid-area: item_3;
+    border-radius: 10px;
+}
+
+.item4{
+    grid-area: item_4;
+    border-radius: 10px;
+}
+
+.item5{
+    grid-area: item_5;
+    border-radius: 10px;
+}
+
+.item6{
+    grid-area: item_6;
+    border-radius: 10px;
+}
+
+.item7{
+    grid-area: item_7;
+    border-radius: 10px;
 }
